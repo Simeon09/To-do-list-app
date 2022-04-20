@@ -88,6 +88,14 @@ body .main #task .Items .to-doItems .text {
   color: white;
 }
 
+body .main #task .Items .to-doItems .text:not(:-moz-read-only) {
+  color: pink;
+}
+
+body .main #task .Items .to-doItems .text:not(:read-only) {
+  color: pink;
+}
+
 body .main #task .Items .to-doItems .edit {
   border: none;
   outline: none;

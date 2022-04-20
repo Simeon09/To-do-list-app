@@ -13,40 +13,52 @@ form.addEventListener("submit", (event) => {
     return;
   }
 
-  const parentDiv = document.createElement('div');
-  parentDiv.classList.add('Items');
+  const parentDiv = document.createElement("div");
+  parentDiv.classList.add("Items");
   // todoitems.appendChild("childdiv");
-  const childDiv = document.createElement ('div');
-  childDiv.classList.add('to-doItems');
+  const childDiv = document.createElement("div");
+  childDiv.classList.add("to-doItems");
   // childDiv.innerText = inputvalue;
-  const textRea = document.createElement('input')
-  textRea. classList.add('text');
-  textRea.type="text" ;
+  const textRea = document.createElement("input");
+  textRea.classList.add("text");
+  textRea.type = "text";
   // textRea .innerHTML = inputvalue  ;
-  textRea.value= inputvalue ;
+  textRea.value = inputvalue;
+  textRea.setAttribute("readonly", "readonly");
   childDiv.appendChild(textRea);
   parentDiv.appendChild(childDiv);
   todoitems.appendChild(parentDiv);
 
+  const btn = document.createElement("button");
+  btn.classList.add("edit");
+  btn.innerHTML = "EDIT";
+  childDiv.appendChild(btn);
+  parentDiv.appendChild(childDiv);
+  todoitems.appendChild(parentDiv);
 
-
-
-  const btn = document.createElement ('button');
-  btn.classList.add('edit') ;
-  btn.innerHTML="EDIT" ;
-  childDiv.appendChild(btn) ;
-  parentDiv.appendChild(childDiv) ;
-  todoitems.appendChild(parentDiv) ;
-    
-  const del= document.createElement ('button');
-  del.classList.add('delete' ) ;
-  del.innerHTML="DELETE" ;
+  const del = document.createElement("button");
+  del.classList.add("delete");
+  del.innerHTML = "DELETE";
   childDiv.appendChild(del);
-  parentDiv.appendChild( childDiv);
-  todoitems .appendChild(parentDiv) ;
+  parentDiv.appendChild(childDiv);
+  todoitems.appendChild(parentDiv);
 
+  inputs.value = "";
 
-  inputs.value="";
+  btn.addEventListener("click", (e) => {
+    if (btn.innerText == "EDIT") {
+      textRea.removeAttribute("readonly");
+      textRea.focus();
+      btn.innerText = "SAVE";
+    } else {
+      textRea.setAttribute("readonly", "readonly");
+      btn.innerText ="EDIT";
+    }
+  });
+
+  del.addEventListener ( 'click' , (e)=>{
+    todoitems.removeChild(parentDiv)
+  })
 
   // else {
   //     additems();
