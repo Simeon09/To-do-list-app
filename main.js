@@ -9,7 +9,8 @@ form.addEventListener("submit", (event) => {
   console.log("submitform");
   const inputvalue = inputs.value;
   if (!inputvalue) {
-    alert("please");
+    response.innerHTML="please add a task"
+    
     return;
   }
 
