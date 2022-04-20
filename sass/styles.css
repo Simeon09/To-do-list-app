@@ -94,11 +94,11 @@ body .main #task .Items .to-doItems .text {
 }
 
 body .main #task .Items .to-doItems .text:not(:-moz-read-only) {
-  color: pink;
+  color: #e42c4b;
 }
 
 body .main #task .Items .to-doItems .text:not(:read-only) {
-  color: pink;
+  color: #e42c4b;
 }
 
 body .main #task .Items .to-doItems .edit {
