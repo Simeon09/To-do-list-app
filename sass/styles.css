@@ -76,7 +76,6 @@ body .main #task .Items h3 {
 
 body .main #task .Items .to-doItems .text {
   margin-top: 12px;
-  margin-left: 5px;
   width: 60vw;
   height: 45px;
   background-color: #010114;
@@ -86,6 +85,12 @@ body .main #task .Items .to-doItems .text {
   border: none;
   outline: none;
   color: white;
+}
+
+@media screen and (min-width: 700px) {
+  body .main #task .Items .to-doItems .text {
+    margin-left: 35px;
+  }
 }
 
 body .main #task .Items .to-doItems .text:not(:-moz-read-only) {
@@ -104,11 +109,25 @@ body .main #task .Items .to-doItems .edit {
   font-weight: 700;
 }
 
+@media screen and (min-width: 700px) {
+  body .main #task .Items .to-doItems .edit {
+    padding-left: 30px;
+    font-size: 16px;
+  }
+}
+
 body .main #task .Items .to-doItems .delete {
   border: none;
   outline: none;
   background-color: transparent;
   color: white;
   font-weight: 700;
+}
+
+@media screen and (min-width: 700px) {
+  body .main #task .Items .to-doItems .delete {
+    padding-left: 30px;
+    font-size: 16px;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
