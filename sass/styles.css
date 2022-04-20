@@ -68,13 +68,13 @@ body .main .head form button {
   font-weight: 700;
 }
 
-.Items h3 {
+body .main #task .Items h3 {
   font-size: 28px;
   color: gray;
   padding-bottom: 20px;
 }
 
-.Items .to-doItems .text {
+body .main #task .Items .to-doItems .text {
   margin-top: 12px;
   margin-left: 5px;
   width: 60vw;
@@ -88,7 +88,7 @@ body .main .head form button {
   color: white;
 }
 
-.Items .to-doItems .edit {
+body .main #task .Items .to-doItems .edit {
   border: none;
   outline: none;
   background-color: transparent;
@@ -96,7 +96,7 @@ body .main .head form button {
   font-weight: 700;
 }
 
-.Items .to-doItems .delete {
+body .main #task .Items .to-doItems .delete {
   border: none;
   outline: none;
   background-color: transparent;

@@ -14,13 +14,40 @@ form.addEventListener("submit", (event) => {
   }
 
   const parentDiv = document.createElement('div');
-  parentDiv.classList.add("Items");
+  parentDiv.classList.add('Items');
   // todoitems.appendChild("childdiv");
   const childDiv = document.createElement ('div');
   childDiv.classList.add('to-doItems');
-  childDiv.innerText = inputvalue;
+  // childDiv.innerText = inputvalue;
+  const textRea = document.createElement('input')
+  textRea. classList.add('text');
+  textRea.type="text" ;
+  // textRea .innerHTML = inputvalue  ;
+  textRea.value= inputvalue ;
+  childDiv.appendChild(textRea);
   parentDiv.appendChild(childDiv);
   todoitems.appendChild(parentDiv);
+
+
+
+
+  const btn = document.createElement ('button');
+  btn.classList.add('edit') ;
+  btn.innerHTML="EDIT" ;
+  childDiv.appendChild(btn) ;
+  parentDiv.appendChild(childDiv) ;
+  todoitems.appendChild(parentDiv) ;
+    
+  const del= document.createElement ('button');
+  del.classList.add('delete' ) ;
+  del.innerHTML="DELETE" ;
+  childDiv.appendChild(del);
+  parentDiv.appendChild( childDiv);
+  todoitems .appendChild(parentDiv) ;
+
+
+  inputs.value="";
+
   // else {
   //     additems();
   // }
