@@ -8,8 +8,7 @@ body {
     background-color: rgb(92, 82, 82);
 
     .main {
-
-        height: 50vh;
+        padding-top: 30px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -20,6 +19,7 @@ body {
                 font-size: 28px;
                 color: gray;
                 padding-bottom: 20px;
+                text-align: center;
             }
 
             padding-bottom: 20px;
@@ -28,7 +28,7 @@ body {
                 display: flex;
                 justify-content: space-between;
                 gap: 5vw;
-               
+
                 input {
 
                     border: none;
@@ -53,7 +53,8 @@ body {
                 }
             }
         }
-        #task{
+
+        #task {
 
             .Items {
                 h3 {
@@ -61,9 +62,9 @@ body {
                     color: gray;
                     padding-bottom: 20px;
                 }
-            
+
                 .to-doItems {
-            
+
                     // width: 60vw;
                     // background-color: rgb(1, 1, 20);
                     // height: 45px;
@@ -82,38 +83,41 @@ body {
                         outline: none;
                         // background-color: transparent;
                         color: white;
+
                         // width: 30vw;
                         // margin-left: 3px;
-                        @media screen  and (min-width:700px){
+                        @media screen and (min-width:700px) {
                             margin-left: 35px;
                         }
                     }
-                    .text:not(:read-only){
+
+                    .text:not(:read-only) {
                         color: rgb(228, 44, 75);
                     }
-            
+
                     .edit {
                         border: none;
                         outline: none;
                         background-color: transparent;
                         color: white;
                         font-weight: 700;
-                        
-                       
-                        @media screen  and (min-width:700px){
+
+
+                        @media screen and (min-width:700px) {
                             padding-left: 30px;
                             font-size: 16px;
                         }
                     }
+
                     .delete {
                         border: none;
                         outline: none;
                         background-color: transparent;
                         color: white;
                         font-weight: 700;
-                        
+
                         // float: right;
-                        @media screen  and (min-width:700px){
+                        @media screen and (min-width:700px) {
                             padding-left: 30px;
                             font-size: 16px;
                         }
@@ -121,8 +125,6 @@ body {
                 }
             }
         }
-        
+
     }
 }
-
-
