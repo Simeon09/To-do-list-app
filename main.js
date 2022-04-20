@@ -29,7 +29,7 @@ form.addEventListener("submit", (event) => {
   childDiv.appendChild(textRea);
   parentDiv.appendChild(childDiv);
   todoitems.appendChild(parentDiv);
-  response.remove();
+   
 
   const btn = document.createElement("button");
   btn.classList.add("edit");
@@ -37,7 +37,7 @@ form.addEventListener("submit", (event) => {
   childDiv.appendChild(btn);
   parentDiv.appendChild(childDiv);
   todoitems.appendChild(parentDiv);
-
+ 
   const del = document.createElement("button");
   del.classList.add("delete");
   del.innerHTML = "DELETE";
