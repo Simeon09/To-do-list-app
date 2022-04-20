@@ -29,7 +29,7 @@ form.addEventListener("submit", (event) => {
   childDiv.appendChild(textRea);
   parentDiv.appendChild(childDiv);
   todoitems.appendChild(parentDiv);
-   
+  response.innerHTML=""
 
   const btn = document.createElement("button");
   btn.classList.add("edit");
